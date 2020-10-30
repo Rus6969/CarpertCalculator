@@ -2,7 +2,9 @@ package com.calculator.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import org.springframework.stereotype.Component;
 
+@Component
 @Getter
 @AllArgsConstructor
 public enum City {
