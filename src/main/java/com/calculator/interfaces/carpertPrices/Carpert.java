@@ -1,5 +1,9 @@
 package com.calculator.interfaces.carpertPrices;
 
+import com.calculator.enums.City;
+
+import java.math.BigDecimal;
+
 public interface Carpert {
-    int getPrice();
+    BigDecimal SqureFeetgetPrice(City city);
 }

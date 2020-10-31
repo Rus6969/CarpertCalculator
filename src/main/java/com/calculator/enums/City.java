@@ -1,16 +1,15 @@
 package com.calculator.enums;
 
 import lombok.AllArgsConstructor;
-import lombok.Getter;
-import org.springframework.stereotype.Component;
 
-@Component
-@Getter
+
 @AllArgsConstructor
 public enum City {
 
-    DALLAS("Dallas"),AUSTIN("Austin"),SAN_ANTONIO("San Antonio"),ARLINGTON("Arlington"),
-    FAIRFAX("Fairfax"),MCLEAN("McLean");
-    private final String value;
+    DALLAS,AUSTIN,SAN_ANTONIO("San Antonio"),ARLINGTON,
+    FAIRFAX,MCLEAN;
 
+
+    City(Object s) {
+    }
 }

@@ -1,19 +1,18 @@
-package com.calculator.floor;
+package com.calculator.services.floor;
 
 import com.calculator.interfaces.floorType.Floor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+import java.math.BigDecimal;
+
 @Component
 public class Kitchen implements Floor {
     @Value("${radius}")
-    private double radius;
-    @Value("p")
-    private double pNumber;
-
+    BigDecimal radius;
 
     @Override
-    public void getArea() {
-        System.out.println(radius * radius * pNumber);
+    public BigDecimal getArea() {
+        return radius.pow(2).multiply(new BigDecimal(Math.PI)) ;
     }
 }

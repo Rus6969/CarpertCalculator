@@ -1,19 +1,22 @@
-package com.calculator.floor;
+package com.calculator.services.floor;
 
 import com.calculator.interfaces.floorType.Floor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+import java.math.BigDecimal;
+
 @Component
 public class LivingRoom implements Floor {
     @Value("${length}")
-    private double length;
+    private BigDecimal length;
     @Value("${width}")
-    private double width;
+    private BigDecimal width;
+
 
     @Override
-    public void getArea() {
-        System.out.println(width*length);
-
+    public BigDecimal getArea() {
+        return width.multiply(length);
     }
 }
+
