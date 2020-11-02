@@ -17,7 +17,7 @@ public class CalculatorApplication {
 
         CalculatorOperator calculatorOperator = container.getBean("calculatorOperator",CalculatorOperator.class);
 
-        System.out.println(calculatorOperator.getTotalCost(City.DALLAS));
+        System.out.println(calculatorOperator.getTotalCost(City.SAN_ANTONIO));
 
 
     }

@@ -14,7 +14,7 @@ public class CalculatorOperator {
     private Carpert carpert;
 
 
-    @Qualifier("livingRoom")
+    @Qualifier("kitchen")
     @Autowired
     private Floor floor;
 
